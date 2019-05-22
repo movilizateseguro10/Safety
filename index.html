@@ -46,24 +46,131 @@
 		<h3 class="title2">Servicios</h3>
 		<!-- CONTENIDO SEPARADO EN 3 COLUMNAS -->
 		<div class="container grid-3">
-			<div>
+			<div data-toggle="modal" data-target="#hoteles">
 				<!-- ICONO TOMADO Font Awesome's ICONOS -->
 				<i class="fas fa-hotel fa-5x"></i>
 				<h3 class="title">Hoteles <br> Hotels</h3>
-				<p></p>
 			</div>
-			<div>
+			<div data-toggle="modal" data-target="#lugares">
 				<i class="fas fa-map-marked-alt fa-5x"></i>
 				<h3 class="title">Lugares de Interes <br> Places Of Interes </h3>
 				<p></p>
 			</div>
-			<div>
+			<div data-toggle="modal" data-target="#transportes">
 				<i class="fas fa-bus-alt fa-5x"></i>
 				<h3 class="title">Sistemas De Transporte <br> Transport System</h3>
 				<p></p>
 			</div>
 		</div>
+		<div class="container grid-2">
+			<div data-toggle="modal" data-target="#seguro">
+				<!-- ICONO TOMADO Font Awesome's ICONOS -->
+				<i class="far fa-eye fa-5x"></i>
+				<h3 class="title">¿Estoy seguro aquí? <br>¿I'm safe here?</h3>
+			</div>
+			<div data-toggle="modal" data-target="#policia">
+				<i class="fas fa-user-shield fa-5x"></i>
+				<h3 class="title">Estaciones de policía <br> Police stations </h3>
+				<p></p>
+			</div>
+		</div>
 	</section>
+
+	<!-- VENTANA EMERGENTE CON MAPA DE HOTELES -->
+	<div class="modal fade" id="hoteles" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="height: 40em;">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Hoteles // Hotels</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- MAPA SE CREA CON IFRAME QUE NOS DA GOOGLE MAPS -->
+					<iframe class="mapa1" src="https://www.google.com/maps/d/embed?mid=1B_1BfoBBq_C5v6DawVeNYcTatV-GvXi_"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- VENTANA EMERGENTE CON MAPA DE LUGARES DE INTERES -->
+	<div class="modal fade" id="lugares" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="height: 40em;">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Lugares de Interes // Places Of Interes </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- MAPA SE CREA CON IFRAME QUE NOS DA GOOGLE MAPS -->
+					<iframe class="mapa1" src="https://www.google.com/maps/d/embed?mid=1WGwqIKSpjobCLh8obc2NdHv_VkdwEGhw" width="640" height="480"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- VENTANA EMERGENTE CON MAPA DE SISTEMAS DE TRANSPORTE-->
+	<div class="modal fade" id="transportes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="height: 40em;">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Sistemas De Transporte // Transport System</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- MAPA SE CREA CON IFRAME QUE NOS DA GOOGLE MAPS -->
+					<iframe class="mapa1" src="https://www.google.com/maps/d/embed?mid=118dKmXo7Z29I02hqQLrni_jUJUfohZs3" ></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- VENTANA EMERGENTE CON MAPA DE ESTOY SEGURO AQUI -->
+	<div class="modal fade" id="seguro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="height: 40em;">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">¿Estoy seguro aquí? // ¿I'm safe here?</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- MAPA SE CREA CON IFRAME QUE NOS DA GOOGLE MAPS -->
+					<iframe class="mapa1" src="https://www.google.com/maps/d/embed?mid=1uHvhI3W9z13Ol4EwfGMHBVtjea8BZGyI"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- VENTANA EMERGENTE CON MAPA DE ESTACIONES DE POLICIA -->
+	<div class="modal fade" id="policia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="height: 40em;">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Estaciones de policía // Police stations</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- MAPA SE CREA CON IFRAME QUE NOS DA GOOGLE MAPS -->
+					<iframe class="mapa1" src="https://www.google.com/maps/d/embed?mid=1B_1BfoBBq_C5v6DawVeNYcTatV-GvXi_"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- FOOTER -->
 	<footer class="footer text-center bg-light">
 		<p>Safety &copy; 2018 - All rights reserved.</p>

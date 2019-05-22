@@ -48,6 +48,14 @@ body {
 	height: 100%;
 	width: 300%;
 }
+.mapa1{
+	height: 100%;
+	width: 100%;
+}
+.modal{
+	height: 100% !important;
+}
+
 
 .title {
 	font-family: 'Oswald', sans-serif;
